@@ -10,17 +10,17 @@
 </head>
 <body>
     
-    <header>
+    <header id="header">
         <img src="img/bg.jpg" id="bg" alt="">
         <nav>
             <div class="container-logo">
                 <img src="img/P.H.png" alt="">
             </div>
             <ul class="menu">
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Conhecimentos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#header">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#conhecimentos">Conhecimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
 
@@ -28,6 +28,7 @@
             <div class="container-txt-intro">
                 <h1>Olá! <br>Sou <span>Pedro Henrique Galvão</span>.</h1>
                 <p>Graduando de Engenharia de Software na PUC-PR.</p>
+                <button>Contate-me</button>
             </div>
             
             <div class="container-img-intro">
@@ -39,10 +40,10 @@
 
     <main>
 
-        <section class="projetos">
+        <section class="projetos" id="projetos">
             <h2>Projetos</h2>
 
-            <div class="projetos-content">
+            <div class="projetos-content" >
                 <div class="container-hand-coding">
                     <img src="img/hand-coding-animate.svg" alt="">
                 </div>
@@ -54,7 +55,7 @@
         </section>
     
 
-        <section class="conhecimentos">
+        <section class="conhecimentos" id="conhecimentos">
             <h2>Conhecimentos</h2>
 
             <div class="conhecimentos-content">
@@ -185,15 +186,21 @@
 
     </main>
     <aside>
-        <section class="contato">
+        <section class="contato" id="contato">
             <h2>Contato</h2>
             <div class="contato-content">
                 <p>
                 Dúvidas, sugestões ou oportunidades? Entre em contato agora mesmo!
                 </p>
                 <div class="container-contatos">
-                    <p>phgs2710@hotmail.com</p>
-                    <p>+55(42)99800-8468</p>
+                    <div class="email">
+                        <img src="img/email.png" alt="">
+                        <p>phgs2710@hotmail.com</p>
+                    </div>
+                    <div class="wpp">
+                        <img src="img/whatsapp.png" alt="">
+                        <p>+55(42)99800-8468</p>
+                    </div>
                 </div>
                 
             </div>
@@ -202,8 +209,21 @@
     </aside>
 
     <footer>
-        <p>Feito por Pedro Henrique Galvão &copy;</p>
+        <div class="footer-content">
+            <div class="container-footer-icons">
+                <a target="_blank" href="https://www.linkedin.com/in/pedro-henrique-galvao/
+                "><i class="fa-brands fa-linkedin-in"></i></a>
+                <a target="_blank" href="https://github.com/pedrohenriquegalvao"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://www.instagram.com/_pedrohgalvao/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p>Feito por Pedro Henrique Galvão &copy;</p>
+        </div>
+        
     </footer>
+
+    <div class="seta">
+        <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
 
     <script src="scripts/progress-circles.js"></script>
 </body>

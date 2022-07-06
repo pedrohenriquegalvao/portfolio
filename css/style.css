@@ -15,6 +15,10 @@
     --fonte4:  'Inter', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -43,8 +47,16 @@ nav {
     align-items: center;
 }
 
+.container-logo {
+    z-index: 1;
+}
+
 .container-logo img {
     width: 50px;
+}
+
+.container-logo img:hover {
+    cursor: pointer;
 }
 
 .menu {
@@ -58,6 +70,8 @@ nav {
 .menu li {
     width: fit-content;
     height: fit-content;
+    z-index: 1;
+    transition: all .5s ease; 
 }
 
 .menu li img {
@@ -69,10 +83,18 @@ nav {
     font-family: var(--fonte1);
 }
 
+.menu li:hover {
+    cursor: pointer;  
+    color: #a7a7a7;
+    transform: scale(1.1);
+    transition: all .5s ease;  
+}
+
 .intro {
-    padding-top: 50px;
+    height: 80vh;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -83,7 +105,11 @@ nav {
 .container-txt-intro {
     color: #FFF;
     font-family: var(--fonte2);
-    transform: translateY(-40px);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 65%;
 }
 
 .container-txt-intro h1 {
@@ -97,6 +123,25 @@ nav {
 
 .container-txt-intro p {
     font-size: 24px;
+}
+
+.container-txt-intro button {
+    border: none;
+    background-color: var(--cor2);
+    padding: 20px;
+    align-self: start;
+    transform: translateY(140px);
+    font-family: var(--fonte2);
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.container-txt-intro button:hover {
+    cursor: pointer;
+    background-color: #3585b3;
+    color: #FFF;
+    transition: all 0.5s ease;
 }
 
 .intro .container-img-intro {
@@ -151,7 +196,7 @@ nav {
 
 .projetos-content .card {
     background-color: var(--cor3);
-    height: 385px;
+    height: 370px;
 }
 
 /*  ---------------- SECTION Conhecimentos ----------------*/
@@ -274,7 +319,9 @@ nav {
 
 /*  ---------------- SECTION Contato ----------------*/
 .contato {
+    padding: 90px 10px;
     padding-top: 90px;
+    padding-bottom: 90px;
     background-color: var(--cor5);
 }
 
@@ -290,30 +337,127 @@ nav {
 .contato h2::after {
     content: "";
     display: block;
-    width: 20vw;
-    margin: 20px auto 40px auto;
+    width: 15vw;
+    margin: 20px auto 50px auto;
     border-top: 3px solid var(--cor1);
 }
 
 .contato-content {
-    background-color: red;
     margin: auto;
 }
 
-.contato-content p {
-    background-color: blue;
-    margin: auto;
+.contato-content > p {
+    margin: 0 auto 30px auto;
     width: fit-content;
     font-family: var(--fonte4);
     font-size: 24px;
 }
 
 .container-contatos {
-    background-color: yellow;
-}
-
-.contato-content p {
     margin: auto;
+    width: fit-content;
+    padding: 30px;
+}
+
+.container-contatos p {
+    font-family: var(--fonte4);
+    font-size: 16px;
+}
+
+.container-contatos img {
+    width: 50px;
+    margin-right: 10px;
+    transition: all .5s ease;
+}
+
+.container-contatos img:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: all .5s ease;
+}
+
+.container-contatos .email, .container-contatos .wpp {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
 }
 
 
+/*  --------------------- Footer ---------------------*/
+footer {
+    overflow-x: hidden;
+    position: relative;
+    height: 12vh;
+    padding-top: 35px;
+    background-color: var(--cor5);
+    opacity: 95%;
+}
+
+footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius:50% 50%  0 0 / 100% 100% 0 0 ;
+    transform: scaleX(1.1);
+}
+
+footer .footer-content {
+    position: relative;
+    z-index: 1;
+}
+
+footer .container-footer-icons {
+    margin: auto;
+    width: fit-content;
+}
+
+.container-footer-icons i {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px 20px;
+    transition: all .5s ease;
+}
+
+.container-footer-icons i:hover {
+    cursor: pointer;
+    color: #a7a7a7;
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+
+footer p {
+    color: #FFF;
+    font-family: var(--fonte4);
+    font-weight: 100;
+    margin: auto;
+    padding: 15px 10px;
+    width: fit-content;
+}
+
+/*---- SETA -----*/
+.seta {
+    position: fixed;
+    cursor: pointer;
+    bottom: 4rem;
+    right: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 3px;
+    box-shadow: 1px 1.5px 1.5px rgb(0 0 0 / 75%);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2), var(--cor5));
+    color: --;
+}
+.seta a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor1);
+    font-size: 1.3rem;
+}

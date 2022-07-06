@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio | Pedro Henrique</title>
 </head>
 <body>
+    
     <header>
+        <img src="img/bg.jpg" id="bg" alt="">
         <nav>
             <div class="container-logo">
                 <img src="img/P.H.png" alt="">
@@ -44,11 +47,8 @@
                     <img src="img/hand-coding-animate.svg" alt="">
                 </div>
 
-                
                 <div class="card"><p>Card1</p></div>
-                 <div class="card"><p>Card2</p></div>
-
-
+                <div class="card"><p>Card2</p></div>     
             </div>
             
         </section>
@@ -56,27 +56,155 @@
 
         <section class="conhecimentos">
             <h2>Conhecimentos</h2>
-            <div class="container-code-typing">
-                <img src="img/code-typing-animate.svg" alt="">
+
+            <div class="conhecimentos-content">
+
+                <div class="container-linguagens">
+
+                    <!------ HTML ------>
+                    <div class="item-linguagem">
+                        <i class="fa-brands fa-html5"></i>
+
+                        <div class="container-circulo">
+                            <svg class="progresso" >
+                                <circle cx="70" cy="70" r="50"></circle>
+                                <circle cx="70" cy="70" r="50" id="progresso-html"></circle>
+                            </svg>
+                            <div class="number" id="porcentagem-html">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------ CSS ------>
+                    <div class="item-linguagem">
+                        <i class="fa-brands fa-css3-alt"></i>
+
+                        <div class="container-circulo">
+                            <svg class="progresso" >
+                                <circle cx="70" cy="70" r="50"></circle>
+                                <circle cx="70" cy="70" r="50" id="progresso-css"></circle>
+                            </svg>
+                            <div class="number" id="porcentagem-css">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------ JavaScript ------>
+                    <div class="item-linguagem">
+                        <i class="fa-brands fa-js"></i>
+
+                        <div class="container-circulo">
+                            <svg class="progresso" >
+                                <circle cx="70" cy="70" r="50"></circle>
+                                <circle cx="70" cy="70" r="50" id="progresso-js"></circle>
+                            </svg>
+                            <div class="number" id="porcentagem-js">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------ PHP ------>
+                    <div class="item-linguagem">
+                        <img src="img/php.png" alt="">
+                        <div class="container-circulo">
+                            <svg class="progresso" >
+                                <circle cx="70" cy="70" r="50"></circle>
+                                <circle cx="70" cy="70" r="50" id="progresso-php"></circle>
+                            </svg>
+                            <div class="number" id="porcentagem-php">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------ JAVA ------>
+                    <div class="item-linguagem">
+                        <img src="img/java.png" alt="">
+
+                        <div class="container-circulo">
+                            <svg class="progresso" >
+                                <circle cx="70" cy="70" r="50"></circle>
+                                <circle cx="70" cy="70" r="50" id="progresso-java"></circle>
+                            </svg>
+                            <div class="number" id="porcentagem-java">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------ PYTHON ------>
+                    <div class="item-linguagem">
+                        <i class="fa-brands fa-python"></i>
+
+                        <div class="container-circulo">
+                            <svg class="progresso" >
+                                <circle cx="70" cy="70" r="50"></circle>
+                                <circle cx="70" cy="70" r="50" id="progresso-python"></circle>
+                            </svg>
+                            <div class="number" id="porcentagem-python">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------ SWIFT ------>
+                    <div class="item-linguagem">
+                        <i class="fa-brands fa-swift"></i>
+
+                        <div class="container-circulo">
+                            <svg class="progresso" >
+                                <circle cx="70" cy="70" r="50"></circle>
+                                <circle cx="70" cy="70" r="50" id="progresso-swift"></circle>
+                            </svg>
+                            <div class="number" id="porcentagem-swift">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------ KOTLIN ------>
+                    <div class="item-linguagem">
+                        
+                        <img src="https://img.icons8.com/ios-filled/100/00080C/kotlin.png"/>
+
+                        <div class="container-circulo">
+                            <svg class="progresso" >
+                                <circle cx="70" cy="70" r="50"></circle>
+                                <circle cx="70" cy="70" r="50" id="progresso-kotlin"></circle>
+                            </svg>
+                            <div class="number" id="porcentagem-kotlin">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container-code-typing">
+                    <img src="img/code-typing-animate.svg" alt="">
+                </div>
+
             </div>
+            
         </section>
 
     </main>
-    
     <aside>
         <section class="contato">
             <h2>Contato</h2>
-            <p>
+            <div class="contato-content">
+                <p>
                 Dúvidas, sugestões ou oportunidades? Entre em contato agora mesmo!
-            </p>
-
-            <span>phgs2710@hotmail.com</span><br>
-            <span>+55(42)99800-8468</span>
+                </p>
+                <div class="container-contatos">
+                    <p>phgs2710@hotmail.com</p>
+                    <p>+55(42)99800-8468</p>
+                </div>
+                
+            </div>
+            
         </section>
     </aside>
 
     <footer>
         <p>Feito por Pedro Henrique Galvão &copy;</p>
     </footer>
+
+    <script src="scripts/progress-circles.js"></script>
 </body>
 </html>

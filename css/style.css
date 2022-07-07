@@ -43,7 +43,7 @@ header {
 
 /* ------- MENU ----- */
 nav {
-    
+    z-index: 999;
     min-height: 10vh;
     width: 90vw;
     margin: auto;
@@ -137,19 +137,18 @@ nav {
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
-
 /*--- RESPONSIVIDADE MENU ---*/
 @media (max-width: 999px) {
     .container-logo {
         display: none;
     }
     .menu {
-        z-index: 999;
+        z-index: 3;
         position: absolute;
         top: 10vh;
         right: 0;
         width: 100vw;
-        height: 100vw;
+        height: 90vh;
         background-color: var(--cor1);
         flex-direction: column;
         align-items: center;
@@ -214,6 +213,7 @@ nav {
     font-size: 16px;
     font-weight: 500;
     transition: all 0.5s ease;
+    z-index: 1;
 }
 
 .container-txt-intro .btn-contato:hover {
@@ -227,7 +227,7 @@ nav {
     width: 500px;
     height: 500px;
     margin-left: 150px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .intro .container-img-intro img {
@@ -259,7 +259,6 @@ nav {
     }
     .container-img-intro {
         width: 350px !important;
-        transform: translateY(-50px);
     }
 }
 
@@ -267,7 +266,39 @@ nav {
     .container-img-intro {
         width: 250px !important;
     }
+
+    .container-txt-intro h1 {
+        font-size: 32px;
+    }
+
+    .container-txt-intro p {
+        font-size: 18px;
+    }
+
 }
+
+@media only screen and (max-width: 340px) {
+    .intro {
+        height: 100%;
+        display: block;
+    }
+
+    .container-txt-intro {
+        width: 95vw !important;
+        height: 50%;
+    }
+
+    .btn-contato {
+        margin-top: 10px !important;
+    }
+
+    .container-img-intro  {
+        display: block;
+        margin: auto !important;
+    }
+}
+
+
 
 /*  --------------------- SECTION PROJETOS ---------------------*/
 .projetos {
@@ -416,7 +447,7 @@ nav {
 }
 
 @media (max-width: 415px){
-    .card, .card::before, .card::after {
+    .card {
         max-width: 250px !important;
         height: 550px;
     }
@@ -653,9 +684,20 @@ nav {
     padding: 30px;
 }
 
+.container-contatos a {
+    text-decoration: none;
+} 
+
 .container-contatos p {
+    color: #000;
     font-family: var(--fonte4);
     font-size: 16px;
+    transition: all .5s ease;
+}
+
+.container-contatos p:hover {
+    transform: scale(1.1);
+    transition: all .5s ease;
 }
 
 .container-contatos img {
@@ -666,7 +708,7 @@ nav {
 
 .container-contatos img:hover {
     cursor: pointer;
-    transform: scale(0.9);
+    transform: scale(1.1);
     transition: all .5s ease;
 }
 

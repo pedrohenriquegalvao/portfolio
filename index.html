@@ -16,6 +16,11 @@
             <div class="container-logo">
                 <img src="img/P.H.png" alt="">
             </div>
+            <div class="menu-mobile">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
             <ul class="menu">
                 <li><a href="#header">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
@@ -28,7 +33,7 @@
             <div class="container-txt-intro">
                 <h1>Olá! <br>Sou <span>Pedro Henrique Galvão</span>.</h1>
                 <p>Graduando de Engenharia de Software na PUC-PR.</p>
-                <button>Contate-me</button>
+                <a href="#contato" class="btn-contato">Contate-me</a>
             </div>
             
             <div class="container-img-intro">
@@ -44,12 +49,36 @@
             <h2>Projetos</h2>
 
             <div class="projetos-content" >
-                <div class="container-hand-coding">
-                    <img src="img/hand-coding-animate.svg" alt="">
-                </div>
+                <div class="container-cards">
 
-                <div class="card"><p>Card1</p></div>
-                <div class="card"><p>Card2</p></div>     
+                    <div class="card">
+                        <picture>
+                            <source srcset="img/omniascire-celular.png" media="(max-width: 785px)">
+                            <img src="img/omniascire-home.png" alt="">
+                        </picture>
+                        <div class="card-info">
+                            <h1>OmniaScire</h1>
+                            <p>Plataforma de cursos online desenvolvida durante o 2º semestre da graduação.<br>
+                            Projeto front-end: HTML5, CSS3 e JavaScript</p>
+                           
+                            <a href="#" class="saiba-mais">Saiba Mais</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <picture>
+                            <source srcset="img/hemobank-celular.jpg" media="(max-width: 785px)">
+                            <img src="img/hemobank-home.jpg" alt="MDN">
+                        </picture>
+                        <div class="card-info">
+                            <h1>Hemobank</h1>
+                            <p>Plataforma de doação de sangue onde tanto hemocentros quanto doadores podem se cadastrar. Desenvolvida durante o 3º semestre da graduação.<br>
+                            Projeto front-end e back-end: HTML5, CSS3, JavaScript, PHP e MySQL</p>
+                            <a href="#" class="saiba-mais">Saiba Mais</a>
+                        </div>
+                    </div>
+
+   
             </div>
             
         </section>
@@ -176,9 +205,8 @@
 
                 </div>
 
-                <div class="container-code-typing">
-                    <img src="img/code-typing-animate.svg" alt="">
-                </div>
+                <img src="img/code-typing-animate.svg" class="vector-code-typing" alt="">
+                
 
             </div>
             
@@ -190,16 +218,17 @@
             <h2>Contato</h2>
             <div class="contato-content">
                 <p>
-                Dúvidas, sugestões ou oportunidades? Entre em contato agora mesmo!
+                Dúvidas, sugestões ou oportunidades? <br> Clique e entre em contato agora mesmo!
                 </p>
                 <div class="container-contatos">
                     <div class="email">
-                        <img src="img/email.png" alt="">
+                        <a href="mailto:phgs2710@hotmail.com?" target="_blank"><img src="img/email.png" alt=""></a>
                         <p>phgs2710@hotmail.com</p>
                     </div>
                     <div class="wpp">
-                        <img src="img/whatsapp.png" alt="">
-                        <p>+55(42)99800-8468</p>
+                        <a href="https://wa.me/5542998008468"><img src="img/whatsapp.png" alt=""></a>
+                        <a href="https://wa.me/5542998008468"><p>+55(42)99800-8468</p></a>
+                       
                     </div>
                 </div>
                 
@@ -226,5 +255,6 @@
     </div>
 
     <script src="scripts/progress-circles.js"></script>
+    <script src="scripts/menu-mobile.js"></script>
 </body>
 </html>

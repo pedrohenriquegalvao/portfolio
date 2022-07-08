@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=240px, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Portfolio | Pedro Henrique</title>
 </head>
 <body>
@@ -256,5 +257,21 @@
 
     <script src="scripts/progress-circles.js"></script>
     <script src="scripts/menu-mobile.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+    <script>
+        let entrada_projetos = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.projetos-content', 
+                start: "center bottom"
+            }
+        });
+        entrada_projetos.from('.projetos-content', { x: 150, opacity: 0, duration: 2})
+    </script>
+    
+    
 </body>
 </html>

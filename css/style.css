@@ -38,11 +38,12 @@ html {
 header {
     background-color: var(--cor1);
     height: 100vh;
-    
+    overflow-x: hidden;
 }
 
 /* ------- MENU ----- */
 nav {
+    
     z-index: 999;
     min-height: 10vh;
     width: 90vw;
@@ -139,9 +140,16 @@ nav {
 
 /*--- RESPONSIVIDADE MENU ---*/
 @media (max-width: 999px) {
+    body, html {
+        position: relative;
+        overflow-x: hidden;
+    }
     .container-logo {
         display: none;
     }
+
+
+
     .menu {
         z-index: 3;
         position: absolute;

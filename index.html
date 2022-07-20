@@ -265,13 +265,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 
     <script>
+        
         let entrada_projetos = gsap.timeline({
             scrollTrigger: {
                 trigger: '.projetos-content', 
-                start: "center bottom"
+                start: "center bottom",
             }
         });
-        entrada_projetos.from('.projetos-content', { x: 150, opacity: 0, duration: 2})
+        entrada_projetos.from('.projetos-content', {
+             x: 150, 
+             opacity: 0, 
+             duration: 1
+            })
     </script>
     
     

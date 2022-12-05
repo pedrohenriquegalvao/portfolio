@@ -55,7 +55,6 @@ header {
 
 /* ------- MENU ----- */
 nav {
-    
     z-index: 999;
     min-height: 10vh;
     width: 90vw;
@@ -757,7 +756,6 @@ footer {
     height: 12vh;
     padding-top: 35px;
     background-color: var(--cor5);
-    opacity: 95%;
 }
 
 footer:before {
@@ -770,6 +768,7 @@ footer:before {
     background: #000;
     border-radius:50% 50%  0 0 / 100% 100% 0 0 ;
     transform: scaleX(1.1);
+    opacity: 95%;
 }
 
 footer .footer-content {
